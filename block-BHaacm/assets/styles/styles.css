@@ -1,0 +1,221 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* general styles */
+body{
+    font-family: 'Roboto Slab', serif;
+    font-family: 'Shippori Mincho', serif;
+    line-height: 1.2;
+}
+*{
+    box-sizing:border-box;
+}
+:root{
+    --primary:#222946;
+    --white:#FFFFFF;
+    --text:#020511;
+    --hero-bg:#E9ECFC;
+    --green:#67B767;
+    --para:#93949b;
+    --hero-bg:#E9ECFC;
+}
+.active{
+    color:var(--green)!important;
+}
+
+html{
+    font-size: 10px;
+}
+.full-width{
+    width:100%;
+}
+/* container styles */
+.container{
+    max-width:1200px;
+    margin:0 auto;
+    width:100%;
+    padding:0 2rem;
+    border:2px solid blue;
+}
+.flex{
+    display: flex;
+    justify-content: center;
+}
+.text-center{
+    text-align: center;
+}
+
+/* header styles */
+.nav-bar a{
+    margin:0 1rem;
+    font-size: 1.5rem;
+    color:var(--white);
+    text-decoration: none;
+}
+.nav-bar{
+    margin-top:1rem;
+}
+.header{
+    background-color:var(--primary);
+    padding:1rem 0;
+    text-align:center;
+}
+.nav{
+    display:inline-block;
+    max-width:100%;
+}
+.brand-img{
+    width:10rem;
+}
+/* hero section styles */
+.hero-section{
+    background-color:var(--hero-bg);
+}
+.hero-padding{
+    padding:2rem 0;
+}
+.article{
+    color:var(--text);
+}
+h1{
+    font-size: 2rem;
+}
+p{
+    font-size:1.2rem;
+    color:var(--para);
+}
+.padding-15{
+    padding:1.5rem 0 0 0;
+}
+.padding-20{
+    padding:2rem 0 0 0;
+}
+.btn{
+    background-color: var(--green);
+    color:var(--white);
+    font-size: 1.5rem;
+    padding:1rem 2.5rem;
+    border:0;
+    outline:0;
+    border-radius:0.5rem;
+    margin:3rem 0 0 0;
+}
+h2{
+    font-size: 3rem;
+}
+/* blog articles */
+h3{
+    font-size:2rem;
+}
+.btn2{
+    padding:0.5rem 1rem;
+    font-size: 1.2rem;
+    margin:2rem 0 0 0;
+}
+.blog-padding{
+    padding:3rem 0;
+}
+/* footer styles */
+.footer{
+    color:var(--hero-bg);
+    text-align: center;
+    background-color: var(--primary);
+    font-size:1.5rem;
+}
+.flex-column{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.footer-padding{
+    padding:2rem 0;
+}
+.footer i{
+    margin:0 1rem;
+    font-size:2rem;
+}
+@media screen and (min-width:768px){
+    /* header styles */
+    .flex-box{
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .header{
+        padding:2rem 0;
+    }
+    .nav-bar a{
+        margin:0 2rem;
+        font-size: 2rem;
+        color:var(--white);
+        text-decoration: none;
+        font-weight:600;
+    }
+    .align-center{
+        align-items: center;
+    }
+    /* hero section styles */
+    .flex-reverse{
+        flex-direction: row-reverse;
+    }
+    .flex-40{
+        flex:0 1 40%;
+    }
+    .flex-55{
+        flex:0 1 50%;
+    }
+    .align-self{
+        align-self:stretch;
+    }
+    /* blog section styles */
+    .flex-30{
+        flex:0 1 32%;
+        margin:0 2rem 0 0;
+    }
+}
