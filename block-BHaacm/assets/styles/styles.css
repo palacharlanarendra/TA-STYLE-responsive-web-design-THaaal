@@ -114,10 +114,6 @@ html{
     padding:1rem 0;
     text-align:center;
 }
-.nav{
-    display:inline-block;
-    max-width:100%;
-}
 .brand-img{
     width:10rem;
 }
@@ -132,7 +128,7 @@ html{
     color:var(--text);
 }
 .hero-image{
-    font-size: 0rem;
+    font-size: 0;
 }
 h1{
     font-size: 2rem;
@@ -181,11 +177,6 @@ h3{
     background-color: var(--primary);
     font-size:1.5rem;
 }
-.flex-column{
-    display:flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
 .footer-padding{
     padding:2rem 0;
 }
@@ -200,7 +191,9 @@ h3{
 .small{
     font-size:2rem;
 }
-@media screen and (min-width:768px){
+
+
+@media screen and (min-width:769px){
    /* general styles */
     .flex{
         display: flex;
@@ -287,5 +280,25 @@ h3{
     }
     small{
         font-size:2.5rem;
+    }
+}
+@media screen and (min-width:780px){
+    .container{
+        max-width:740px;
+    }
+}
+@media screen and (min-width:992px){
+    .container{
+        max-width:960px;
+    }
+}
+@media screen and (min-width:1200px){
+    .container{
+        max-width:1140px;
+    }
+}
+@media screen and (min-width:1460px){
+    .container{
+        max-width:1340px;
     }
 }
