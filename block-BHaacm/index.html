@@ -39,26 +39,28 @@
 </head>
 <body>
     <header class="header text-center">
-        <div class="container flex justify-between ">
-            <div>
-                <a href="#"><img class="brand-img" src="./assets/images/logo.png" alt="brand logo"/></a>
-            </div>
-            <nav>
-                <ul class="nav-bar flex-nav justify-center align-center">
-                    <li><a href="#">HOME</a></li>
-                    <li><a href="#" class="active">BLOG</a></li>
-                    <li><a href="#">ABOUT</a></li>
-                </ul>
-            </nav>
+        <div class="container">
+            <article class="flex justify-between">
+                <div>
+                    <a href="#"><img class="brand-img" src="./assets/images/logo.png" alt="brand logo"/></a>
+                </div>
+                <nav>
+                    <ul class="nav-bar flex-nav justify-center align-center">
+                        <li><a href="#">HOME</a></li>
+                        <li><a href="#" class="active">BLOG</a></li>
+                        <li><a href="#">ABOUT</a></li>
+                    </ul>
+                </nav>
+            </article>
         </div>
     </header>
     <main>
         <section class="hero-section hero-padding">
-            <div class="container flex-box flex-reverse">
+            <article class="container flex-box flex-reverse">
                 <div class="hero-image flex-60 align-center">
                     <img class="full-width" src="./assets/images/01.png" alt="two pencils"/>
                 </div>
-                <article class="hero-article flex-40 align-self">
+                <div class="hero-article flex-40 align-self">
                     <h1 class="padding-20">What is Lorem Ipsum?</h1>
                     <p class="padding-20">Lorem ipsum dolor sit amet consectetur
                         adipisicing elit. Necessitatibus quod libero nulla obcaecati quaerat, 
@@ -67,15 +69,15 @@
                         voluptates vel reprehenderit, corporis, nam error eveniet amet soluta, facere obcaecati beatae sapiente
                         ipsum nostrum quam nulla dolorum omnis Ipsa quia nostrum numquam ab.
                     </p>
-                    <input class="btn" type="submit" value="Read More"/>
-                </article>
-            </div>
+                    <a class="btn">Read More</a>
+                </div>
+            </article>
         </section>
         <section class="blog-section blog-padding">
             <div class="container">
                 <h2 class="text-center">Our Blog</h2>
                 <section class="flex-box">
-                    <div class="padding-20 flex-30">
+                    <article class="padding-20 flex-30">
                         
                         <div class="article-img ">
                             <img class="full-width" src="./assets/images/02.png" alt="cup and books"/>
@@ -86,8 +88,8 @@
                         </p>
                         <input class="btn btn2" type="submit" value="Read More"/>
                         
-                    </div>
-                    <div class="padding-20 flex-30">
+                    </article>
+                    <article class="padding-20 flex-30">
                         
                         <div class="article-img">
                             <img class="full-width" src="./assets/images/03.png" alt="cup and books"/>
@@ -98,8 +100,8 @@
                         </p>
                         <input class="btn btn2" type="submit" value="Read More"/>
                      
-                    </div>
-                    <div class="padding-20 flex-30">
+                    </article>
+                    <article class="padding-20 flex-30">
                         
                         <div class="article-img">
                             <img class="full-width" src="./assets/images/04.png" alt="cup and books"/>
@@ -110,7 +112,7 @@
                         </p>
                         <input class="btn btn2" type="submit" value="Read More"/>
                         
-                    </div>
+                    </article>
                 </section>
             </div>
         </section>
@@ -118,10 +120,10 @@
     <footer class="footer blog-padding">
         <div class="container flex-box ">
             <small>&copy; AltCampus</small>
-            <div class="padding-20 padding-remove">
-                <i class="fab fa-facebook-square"></i>
-                <i class="fab fa-twitter-square"></i>
-            </div>
+            <nav class="padding-20 padding-remove">
+                <a href="http://www.fb.com"><i class="fab fa-facebook-square"></i></a>
+                <a href="http://www.twitter.com"><i class="fab fa-twitter-square"></i></a>  
+            </nav>
         </div>
     </footer>
 
