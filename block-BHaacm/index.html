@@ -1,0 +1,132 @@
+<!-- writeCode
+
+- Create a responsive layout according to the design shown below.
+
+#### Large Screen view(Above 768px)
+
+![Responsive Layout Assignment](https://raw.githubusercontent.com/suraj122/AC-STYLE-images/master/rwd/ex-1-desktop-view.png)
+
+#### Small Screen view(Below 768px)
+
+![Responsive Layout Assignment](https://raw.githubusercontent.com/suraj122/AC-STYLE-images/master/rwd/ex-1-mob-view.png)
+
+- Using CSS resets is necessary.
+
+- Use semantic tags and keep the nesting and indentation proper.
+
+- Pay attention to the codes, your code quality matters a lot.
+
+- Try to implement the layout as exactly as it has been provided in the design.
+
+- Pay attention to minor things like spacing, alignment, size, etc.
+
+- Use any font-family which suits better for the assignment.
+
+- Once you are done with the assignment connect with the mentor and get the code reviewed. -->   
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive | Assignment - 1</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2bbf3cce3b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./assets/styles/styles.css"/>
+</head>
+<body>
+    <header class="header text-center">
+        <div class="container">
+            <article class="flex justify-between">
+                <div>
+                    <a href="#"><img class="brand-img" src="./assets/images/logo.png" alt="brand logo"/></a>
+                </div>
+                <nav>
+                    <ul class="nav-bar flex-nav justify-center align-center">
+                        <li><a href="#">HOME</a></li>
+                        <li><a href="#" class="active">BLOG</a></li>
+                        <li><a href="#">ABOUT</a></li>
+                    </ul>
+                </nav>
+            </article>
+        </div>
+    </header>
+    <main>
+        <section class="hero-section hero-padding">
+            <article class="container flex-box flex-reverse">
+                <div class="hero-image flex-60 align-center">
+                    <img class="full-width" src="./assets/images/01.png" alt="two pencils"/>
+                </div>
+                <div class="hero-article flex-40 align-self">
+                    <h1 class="padding-20">What is Lorem Ipsum?</h1>
+                    <p class="padding-20">Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Necessitatibus quod libero nulla obcaecati quaerat, 
+                        autem aliquid, recusandae laboriosam, distinctio perspiciatis at laudantium exercitationem neque?
+                        Ut expedita consequatur accusantium repellat fugit.Recusandae, deleniti. Nemo illo commodi suscipit 
+                        voluptates vel reprehenderit, corporis, nam error eveniet amet soluta, facere obcaecati beatae sapiente
+                        ipsum nostrum quam nulla dolorum omnis Ipsa quia nostrum numquam ab.
+                    </p>
+                    <a class="btn">Read More</a>
+                </div>
+            </article>
+        </section>
+        <section class="blog-section blog-padding">
+            <div class="container">
+                <h2 class="text-center">Our Blog</h2>
+                <section class="flex-box">
+                    <article class="padding-20 flex-30">
+                        
+                        <div class="article-img ">
+                            <img class="full-width" src="./assets/images/02.png" alt="cup and books"/>
+                        </div>
+                        <h3 class="padding-15">Why do we use it?</h3>
+                        <p class="padding-15">Lorem ipsum dolor sit amet 
+                            adipisicing elit Dolor ipsa providentipsum dolor sit amet consectetur.
+                        </p>
+                        <input class="btn btn2" type="submit" value="Read More"/>
+                        
+                    </article>
+                    <article class="padding-20 flex-30">
+                        
+                        <div class="article-img">
+                            <img class="full-width" src="./assets/images/03.png" alt="cup and books"/>
+                        </div>
+                        <h3 class="padding-15">Where does it come from?</h3>
+                        <p class="padding-15">Lorem ipsum dolor sit amet 
+                            adipisicing elit Dolor ipsa providentipsum dolor sit amet consectetur.
+                        </p>
+                        <input class="btn btn2" type="submit" value="Read More"/>
+                     
+                    </article>
+                    <article class="padding-20 flex-30">
+                        
+                        <div class="article-img">
+                            <img class="full-width" src="./assets/images/04.png" alt="cup and books"/>
+                        </div>
+                        <h3 class="padding-15">Where can i get some?</h3>
+                        <p class="padding-15">Lorem ipsum dolor sit amet 
+                            adipisicing elit Dolor ipsa providentipsum dolor sit amet consectetur.
+                        </p>
+                        <input class="btn btn2" type="submit" value="Read More"/>
+                        
+                    </article>
+                </section>
+            </div>
+        </section>
+    </main>
+    <footer class="footer blog-padding">
+        <div class="container flex-box ">
+            <small>&copy; AltCampus</small>
+            <nav class="padding-20 padding-remove">
+                <a href="http://www.fb.com"><i class="fab fa-facebook-square"></i></a>
+                <a href="http://www.twitter.com"><i class="fab fa-twitter-square"></i></a>  
+            </nav>
+        </div>
+    </footer>
+
+    
+</body>
+</html>
