@@ -1,0 +1,315 @@
+<!-- writeCode
+
+- Create a responsive layout according to the design shown below.
+
+#### Large Screen view(Above 768px)
+
+![Responsive Layout Assignment](https://raw.githubusercontent.com/suraj122/AC-STYLE-images/master/rwd/ex-2.png)
+
+#### Small Screen view(Below 768px)
+
+1. Figure what would be the best possible way to display the layout on small screens.
+
+2. Create hmaburger icon to toggle menu on mobile view.
+
+- Using CSS resets is necessary.
+- Use semantic tags and keep the nesting and indentation proper.
+- Pay attention to the codes, your code quality matters a lot.
+- Try to implement the layout as exactly as it has been provided in the design.
+- Pay attention to minor things like spacing, alignment, size, etc.
+- Use "Nunito" font-family for the assignment.
+- Figure out the best possible way to display the layout on small screens.
+- Create hmaburger icon to toggle menu on small screen view.
+- Once you are done with the assignment connect with the mentor and get the code reviewed. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/2bbf3cce3b.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/styles/styles.css"/>
+    <title>Responsive | Events | Assignment-2</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container flex align-items-center">
+            <div class="brand-logo">
+                <a href="#"><img src="./assets/images/logo.svg" alt="brand logo"/></a>
+            </div>
+            <label class="bars" for="toggle">
+                <i class="fas fa-bars"></i>
+            </label>
+            <input id="toggle" type="checkbox"/>
+            <nav class="nav">
+                <ul class="nav-bar flex flex-direction-column text-align-center">
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">SERVICES</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                    <li><a class="btn" href="#">JOIN US</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="hero-section text-align-center">
+            <div class="hero-image ">
+                <div class="container">
+                    <article class="flex flex-box flex-direction-column">
+                        <div class="flex-50 align-self-center margin-top margin-top-12">
+                            <h1 class="article-heading article-heading-width">Web Developer Conference <span>2020</span></h1>
+                            <p class="article-para article-para-white padding-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                Sunt ipsam aliquam similique consectetur pariatur inventore perferendis
+                                 voluptates velit harum! Magnam aut quaerat dolores, 
+                                perspiciatis cum labore voluptatibus voluptas itaque iure!
+                            </p>
+                            <a class="btn btn-secondary">Register Now</a>
+                        </div>
+                        <div class="hero-article-image margin-top">
+                            <img src="./assets/images/hero.png" alt="hero image"/>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section class="about-section text-align-center padding-5">
+            <div class="container">
+                <article class="flex flex-direction-column">
+                    <div class="flex-45 about-article-image">
+                        <img src="./assets/images/about.png" alt="hero image"/>
+                    </div>
+                    <div class="flex-45 align-self-center">
+                        <h2 class="article-heading article-heading-black padding-2">ABOUT THE EVENT</h2>
+                        <p class="article-para article-para-black padding-bottom-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Sunt ipsam aliquam similique consectetur pariatur inventore perferendis
+                                voluptates velit harum! Magnam aut quaerat dolores, 
+                            perspiciatis cum labore voluptatibus voluptas itaque iure!
+                        </p>
+                        <a href="#" class="btn btn-secondary">Register Now</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <section class="services-section text-align-center padding-5 padding-bottom-5">
+            <div class="container">
+                <h2 class="article-heading article-heading-black padding-3 padding-bottom-8">Why You Should Join</h2>
+                <section class="flex flex-direction-column">  
+                    <article class="flex-30 services-padding dotted-border">
+                        <div class="number">1</div>
+                        <h2 class="article-heading service-heading-black">Network</h2>
+                        <p class="article-para article-para-black">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Sunt ipsam aliquam similique consectetur pariatur inventore perferendis
+                                voluptates velit harum! Magnam aut quaerat dolores, 
+                            perspiciatis cum labore voluptatibus voluptas itaque iure!
+                        </p>
+                    </article>
+                    <article class="flex-30 services-padding align-self-center dotted-border">
+                        <div class="number">2</div>
+                        <h2 class="article-heading service-heading-black">Great Speakers</h2>
+                        <p class="article-para article-para-black">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Sunt ipsam aliquam similique consectetur pariatur inventore perferendis
+                                voluptates velit harum! Magnam aut quaerat dolores, 
+                            perspiciatis cum labore voluptatibus voluptas itaque iure!
+                        </p>
+                    </article>
+                    <article class="flex-30 services-padding dotted-border">
+                        <div class="number">3</div>
+                        <h2 class="article-heading service-heading-black">Information</h2>
+                        <p class="article-para article-para-black">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Sunt ipsam aliquam similique consectetur pariatur inventore perferendis
+                                voluptates velit harum! Magnam aut quaerat dolores, 
+                            perspiciatis cum labore voluptatibus voluptas itaque iure!
+                        </p>
+                    </article>
+                </section>
+            </div>
+        </section>
+        <section class="schedule-section text-align-center padding-5">
+            <div class="container">
+                <h2 class="article-heading article-heading-black  padding-5 padding-bottom-8">Schedule</h2>
+                <section class="article-section">
+                    <article class="schedule-article flex flex-direction-column">
+                        <div class="flex-10">
+                            <div class="round">06 Sept</div>
+                        </div>
+                        <div class="schedule-article-image flex-15">
+                            <img src="./assets/images/schedule-01.jpg" alt="people meet"/>
+                        </div>
+                        <div class="flex-60 align-self-stretch">
+                            <h2 class="schedule-heading padding-1">Digital World Event Conversation</h2>
+                            <p class="article-para article-para-black">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                 Voluptas sed eum nihil voluptatibus. 
+                                 Quasi earum molestias nobis suscipit veniam voluptatibus nam ut pariatur 
+                                 similique expedita Quibusdam voluptatibus tenetur exercitationem libero!
+                            </p>
+                        </div>
+                    </article>   
+                </section>
+                <div class="schedule-line"></div>
+                <section class="article-section">
+                    <article class="schedule-article flex flex-direction-column">
+                        <div class="flex-10">
+                            <div class="round round-bg">07 Sept</div>
+                        </div>
+                        <div class="schedule-article-image flex-15">
+                            <img src="./assets/images/schedule-02.jpg" alt="people meet"/>
+                        </div>
+                        <div class="flex-60">
+                            <h2 class="schedule-heading padding-1">Web Designing Conversation</h2>
+                            <p class="article-para article-para-black">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                 Voluptas sed eum nihil voluptatibus. 
+                                 Quasi earum molestias nobis suscipit veniam voluptatibus nam ut pariatur 
+                                 similique expedita Quibusdam voluptatibus tenetur exercitationem libero!
+                            </p>
+                        </div>
+                    </article>
+                </section>
+                <div class="schedule-line"></div>
+                <section class="article-section">
+                    <article class="schedule-article flex flex-direction-column">
+                        <div class="flex-10">
+                            <div class="round round-bg">08 Sept</div>
+                        </div>
+                        <div class="schedule-article-image flex-15">
+                            <img src="./assets/images/schedule-03.jpg" alt="people meet"/>
+                        </div>
+                        <div class="flex-60">
+                            <h2 class="schedule-heading padding-1">Web Development Conversation</h2>
+                            <p class="article-para article-para-black">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                 Voluptas sed eum nihil voluptatibus. 
+                                 Quasi earum molestias nobis suscipit veniam voluptatibus nam ut pariatur 
+                                 similique expedita Quibusdam voluptatibus tenetur exercitationem libero!
+                            </p>
+                        </div>
+                    </article>
+                </section>
+                <div class="schedule-line"></div>
+                <section class="article-section">
+                    <article class="schedule-article flex flex-direction-column">
+                        <div class="flex-10">
+                            <div class="round round-bg">09 Sept</div>
+                        </div>
+                        <div class="schedule-article-image flex-15">
+                            <img src="./assets/images/schedule-04.jpg" alt="people meet"/>
+                        </div>
+                        <div class="flex-60">
+                            <h2 class="schedule-heading padding-1">Digital Marketing Conference</h2>
+                            <p class="article-para article-para-black">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                 Voluptas sed eum nihil voluptatibus. 
+                                 Quasi earum molestias nobis suscipit veniam voluptatibus nam ut pariatur 
+                                 similique expedita Quibusdam voluptatibus tenetur exercitationem libero!
+                            </p>
+                        </div>
+                    </article>
+                </section>
+                <div class="button-center padding-5">
+                    <a class="btn btn-secondary">Download Schedule</a>
+                </div>
+                
+            </div>
+        </section>
+        <section class="icon-section text-align-center padding-5">
+            <div class="container">
+                <div class="icon-article-section flex flex-direction-column">
+                    <article class="icon-article flex-25">
+                        <img src="./assets/images/speaker.png" alt="speaker"/>
+                        <h2 class="icon-heading padding-2">20+</h2>
+                        <p class="icon-para">Great Speakers</p>
+                    </article>
+                    <article class="icon-article icon-active flex-25">
+                        <img src="./assets/images/idea.png" alt="total topic"/>
+                        <h2 class="icon-heading padding-2">50+</h2>
+                        <p class="icon-para">Total Topic</p>
+                    </article>
+                    <article class="icon-article flex-25">
+                        <img src="./assets/images/participants.png" alt="participants"/>
+                        <h2 class="icon-heading padding-2">300+</h2>
+                        <p class="icon-para">Participants</p>
+                    </article>
+                    <article class="icon-article flex-25">
+                        <img src="./assets/images/sponsor.png" alt="sponsors"/>
+                        <h2 class="icon-heading padding-2">20+</h2>
+                        <p class="icon-para">Sponsors</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section class="video-section text-align-center">
+            <div class="container">
+               <figure class="iframe-wrapper">
+                <iframe src="https://www.youtube.com/embed/9CEW3Tmx2tg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+               </figure>
+                
+            </div>
+            
+        </section>
+        <section class="news-section text-align-center padding-bottom-15">
+            <div class="container">
+                <h2 class="article-heading article-heading-black padding-5">Our Latest News</h2>
+                <div class="news-article-section flex flex-direction-column">
+                    <article class="news-article flex-30">
+                        <div class="news-article-image">
+                            <img src="./assets/images/news-01.png" alt="two pencils"/>
+                        </div>
+                        <h2 class="news-heading padding-1">How to Build a great portfolio as a beginner developer</h2>
+                        <p class="news-para padding-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis earum, at aut autem quae alias cumque dolorum tempora, assumenda ducimus fugit praesentium illum sunt similique temporibus provident odit doloremque deleniti?</p>
+                        <a href="#" class="read-more">Read More</a>
+                    </article>
+                    <article class="news-article flex-30">
+                        <div class="news-article-image">
+                            <img src="./assets/images/news-02.png" alt="two pencils"/>
+                        </div>
+                        <h2 class="news-heading padding-1">How to Build a great portfolio as a beginner developer</h2>
+                        <p class="news-para padding-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis earum, at aut autem quae alias cumque dolorum tempora, assumenda ducimus fugit praesentium illum sunt similique temporibus provident odit doloremque deleniti?</p>
+                        <a href="#" class="read-more news-active">Read More</a>
+                    </article>
+                    <article class="news-article flex-30">
+                        <div class="news-article-image">
+                            <img src="./assets/images/news-03.png" alt="two pencils"/>
+                        </div>
+                        <h2 class="news-heading padding-1">How to Build a great portfolio as a beginner developer</h2>
+                        <p class="news-para padding-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis earum, at aut autem quae alias cumque dolorum tempora, assumenda ducimus fugit praesentium illum sunt similique temporibus provident odit doloremque deleniti?</p>
+                        <a href="#" class="read-more">Read More</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer text-align-center">
+            <section class="top-footer-section padding-5">
+                <div class="container flex-box flex-direction-column">
+                    <div class="footer-top-image flex-33">
+                        <img src="./assets/images/footer-logo.png" alt="footer logo"/>
+                    </div>
+                    <div class="flex-36">
+                        <h2 class="footer-heading padding-3">Quick Links</h2>
+                        <nav class="footer-nav-bar">
+                            <ul class="flex-box justify-content-center">
+                                <li><a href="#">Program</a></li>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                                <li><a href="#">services</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="flex-28">
+                        <h2 class="footer-heading padding-3">Follow Us</h2>
+                        <nav>
+                            <ul class="flex-box justify-content-center footer-margin-left">
+                                <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </section>
+            <section class="bottom-footer-section padding-3 text-center">
+                <div class="container">
+                    <small >&copy; AltCampus Services Pvt Ltd, 2018-present.</small>
+                </div>
+            </section>
+    </footer>   
+</body>
+</html>
