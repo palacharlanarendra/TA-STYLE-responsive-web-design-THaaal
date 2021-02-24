@@ -38,7 +38,11 @@
             <div class="brand-logo">
                 <a href="#"><img src="./assets/images/logo.svg" alt="brand logo"/></a>
             </div>
-            <nav>
+            <label class="bars" for="toggle">
+                <i class="fas fa-bars"></i>
+            </label>
+            <input id="toggle" type="checkbox"/>
+            <nav class="nav">
                 <ul class="nav-bar flex flex-direction-column">
                     <li><a href="#">HOME</a></li>
                     <li><a href="#">ABOUT</a></li>
@@ -48,13 +52,12 @@
                 </ul>
             </nav>
         </div>
-
     </header>
     <main>
-        <section class="hero-section ">
+        <section class="hero-section text-align-center">
             <div class="hero-image ">
                 <div class="container">
-                    <article class="flex flex-box flex-direction-column text-align">
+                    <article class="flex flex-box flex-direction-column">
                         <div class="flex-50 align-self-center margin-top margin-top-12">
                             <h1 class="article-heading article-heading-width">Web Developer Conference <span>2020</span></h1>
                             <p class="article-para article-para-white padding-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
@@ -71,13 +74,13 @@
                 </div>
             </div>
         </section>
-        <section class="about-section padding-5 text-align">
+        <section class="about-section text-align-center padding-5">
             <div class="container">
                 <article class="flex flex-direction-column">
                     <div class="flex-45 about-article-image">
                         <img src="./assets/images/about.png" alt="hero image"/>
                     </div>
-                    <div class="flex-50 align-self-center">
+                    <div class="flex-45 align-self-center">
                         <h2 class="article-heading article-heading-black padding-2">ABOUT THE EVENT</h2>
                         <p class="article-para article-para-black padding-bottom-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                             Sunt ipsam aliquam similique consectetur pariatur inventore perferendis
@@ -89,9 +92,9 @@
                 </article>
             </div>
         </section>
-        <section class="services-section padding-bottom-5">
+        <section class="services-section text-align-center padding-5 padding-bottom-5">
             <div class="container">
-                <h2 class="article-heading article-heading-black text-align padding-3 padding-bottom-8">Why You Should Join</h2>
+                <h2 class="article-heading article-heading-black padding-3 padding-bottom-8">Why You Should Join</h2>
                 <section class="flex flex-direction-column">  
                     <article class="flex-30 services-padding dotted-border">
                         <div class="number">1</div>
@@ -123,7 +126,7 @@
                 </section>
             </div>
         </section>
-        <section class="schedule-section text-align">
+        <section class="schedule-section text-align-center padding-5">
             <div class="container">
                 <h2 class="article-heading article-heading-black  padding-5 padding-bottom-8">Schedule</h2>
                 <section class="article-section">
@@ -207,7 +210,7 @@
                 
             </div>
         </section>
-        <section class="icon-section padding-5">
+        <section class="icon-section text-align-center padding-5">
             <div class="container">
                 <div class="icon-article-section flex flex-direction-column">
                     <article class="icon-article flex-25">
@@ -233,19 +236,18 @@
                 </div>
             </div>
         </section>
-        <section class="banner-section">
+        <section class="video-section text-align-center">
             <div class="container">
-                <div class="banner-image">
-                    <img src="./assets/images/banner.png" alt="crowd"/>
-                    <div class="banner-circle flex justify-content-center align-items-center"><i class="fas fa-play"></i></div>
-                </div>
+               <figure class="iframe-wrapper">
+                <iframe src="https://www.youtube.com/embed/9CEW3Tmx2tg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+               </figure>
                 
             </div>
             
         </section>
-        <section class="news-section padding-bottom-15">
+        <section class="news-section text-align-center padding-bottom-15">
             <div class="container">
-                <h2 class="article-heading article-heading-black text-align padding-5">Our Latest News</h2>
+                <h2 class="article-heading article-heading-black padding-5">Our Latest News</h2>
                 <div class="news-article-section flex flex-direction-column">
                     <article class="news-article flex-30">
                         <div class="news-article-image">
@@ -275,16 +277,16 @@
             </div>
         </section>
     </main>
-    <footer class="footer">
-            <section class="top-footer-section text-align padding-5">
+    <footer class="footer text-align-center">
+            <section class="top-footer-section padding-5">
                 <div class="container flex-box flex-direction-column">
-                    <div class="footer-top-image flex-33 align-self-center">
+                    <div class="footer-top-image flex-33">
                         <img src="./assets/images/footer-logo.png" alt="footer logo"/>
                     </div>
                     <div class="flex-36">
                         <h2 class="footer-heading padding-3">Quick Links</h2>
                         <nav class="footer-nav-bar">
-                            <ul class="flex-box">
+                            <ul class="flex-box justify-content-center">
                                 <li><a href="#">Program</a></li>
                                 <li><a href="#">About Us</a></li>
                                 <li><a href="#">Contact Us</a></li>
@@ -295,7 +297,7 @@
                     <div class="flex-28">
                         <h2 class="footer-heading padding-3">Follow Us</h2>
                         <nav>
-                            <ul class="flex-box footer-margin-left">
+                            <ul class="flex-box justify-content-center footer-margin-left">
                                 <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
                                 <li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
                             </ul>
@@ -303,7 +305,7 @@
                     </div>
                 </div>
             </section>
-            <section class="bottom-footer-section text-align padding-3">
+            <section class="bottom-footer-section padding-3 text-center">
                 <div class="container">
                     <small >&copy; AltCampus Services Pvt Ltd, 2018-present.</small>
                 </div>
